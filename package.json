@@ -1,0 +1,25 @@
+{
+  "name": "mediaplayer",
+  "version": "1.0.0",
+  "description": "\"Media Player\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brahianf/MediaPlayer.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Brahianf Hurtado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brahianf/MediaPlayer/issues"
+  },
+  "homepage": "https://github.com/brahianf/MediaPlayer#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

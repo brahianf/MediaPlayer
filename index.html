@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="./assets/index.css"/>
+</head>
+<body>
+    <header>
+        <h1>PlatziMediaPlayer.js</h1>
+        <p>An extensible media player.</p>
+    </header>
+  
+    <main class="container">
+        <video class="movie">
+          <source src="./assets/BigBuckBunny.mp4" />
+        </video>
+        <button>Play/Pause</button>
+    </main>
+    
+    <script>
+        // Selector o varios
+        const video = document.querySelector("video");
+        const button = document.querySelector("button");
+        
+        // Clase con objeto de configuración 
+        function MediaPlayer(config){
+            // Leer cual es el elemento de config que representa el media
+            this.media = config.el
+        }
+        
+        // Método play añadido al prototype
+        MediaPlayer.prototype.play = function () {
+            this.media.play();
+        }
+        
+        const player = new MediaPlayer({el: video});
+        
+        // Play(), todos los elementos del DOM tienen API
+        // htmlmediaelement => propiedades eventos y metodos
+        button.onclick = () => player.play();
+        
+        
+    </script>
+</body>
+</html>
