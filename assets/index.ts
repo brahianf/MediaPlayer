@@ -1,6 +1,6 @@
-import MediaPlayer from './MediaPlayer.js'
-import AutoPlay from '../plugins/AutoPlay.js'
-import AutoPause from '../plugins/AutoPause.ts'
+import MediaPlayer from './MediaPlayer'
+import AutoPlay from './plugins/AutoPlay'
+import AutoPause from './plugins/AutoPause'
 
 
 // Selector o varios
@@ -13,11 +13,11 @@ const player = new MediaPlayer({
 
 // Play(), todos los elementos del DOM tienen API
 // htmlmediaelement => propiedades eventos y metodos
-const playButton = document.querySelector('#playButton');
+const playButton: HTMLMediaElement = document.querySelector('#playButton');
 playButton.onclick = () => player.togglePlay();
 
 
-const muteButton = document.querySelector('#muteButton');
+const muteButton: HTMLMediaElement = document.querySelector('#muteButton');
 muteButton.onclick = () => {
     if (player.media.muted) {
         player.unmute();

@@ -1,33 +1,18 @@
 
 // Clase con objeto de configuración  
 class MediaPlayer {
+    media: HTMLMediaElement;
+    plugins: Array<any>;
     constructor(config) {
         // Leer cual es el elemento de config que representa el media
         this.media = config.el;
         this.plugins = config.plugins || [];
-        this._initPlugins();
+        this.initPlugins();
     }
-    _initPlugins() {
-        const player = {
-            play: () => this.play(),
-            pause: () => this.pause(),
-            media: this.media,
-            get muted() {
-                return this.media.muted;
-            },
-
-            set muted(value) {
-                this.media.muted = value;
-                // if(value== true){
-                //     this.media.muted=true;
-                // } else {
-                //     this.media.muted=false;
-                // }
-            }
-        };
+    private initPlugins() {
 
         this.plugins.forEach(plugin => {
-            plugin.run(player);
+            plugin.run(this);
         });
     }
     // Método play añadido al prototype
