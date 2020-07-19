@@ -1,0 +1,27 @@
+{
+  "name": "mediaplayer",
+  "version": "1.0.0",
+  "description": "Plugin Js",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc src/**/*.ts src/plugins/*.ts src/plugins/**/*.ts --outDir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brahianf/MediaPlayer.git"
+  },
+  "keywords": [
+    "Js",
+    "tsc"
+  ],
+  "author": "Brahianf Hurtado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brahianf/MediaPlayer/issues"
+  },
+  "homepage": "https://github.com/brahianf/MediaPlayer#readme",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
