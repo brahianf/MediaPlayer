@@ -1,10 +1,10 @@
 {
-  "name": "mediaplayer",
+  "name": "mediap",
   "version": "1.0.0",
   "description": "Plugin Js",
-  "main": "index.js",
+  "main": "lib/MediaPlayer.js",
   "scripts": {
-    "build": "tsc src/**/*.ts src/plugins/*.ts src/plugins/**/*.ts --outDir lib",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

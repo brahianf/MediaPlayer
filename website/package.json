@@ -25,5 +25,8 @@
   },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "mediap": "^1.0.0"
+  }
 }

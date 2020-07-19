@@ -1,7 +1,7 @@
-import MediaPlayer from './MediaPlayer';
-import AutoPlay from './plugins/AutoPlay';
-import AutoPause from './plugins/AutoPause';
-import Ads from './plugins/Ads';
+import MediaPlayer from 'mediap/lib/MediaPlayer';
+import AutoPlay from 'mediap/lib/plugins/AutoPlay';
+import AutoPause from 'mediap/lib/plugins/AutoPause';
+import Ads from 'mediap/lib/plugins/Ads';
 
 
 // Selector o varios
